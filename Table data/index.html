@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MCA019 Nathaniel</title>
+	<script type="text/javascript" src="function.js"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body onload="start()" class="body">
+<center>
+<table>
+	<tr>
+			<td>
+				<div class="wrapper1">
+				<form class="form">
+				<table style="border-collapse: separate; border-spacing: 0 15px">
+
+					<tr>
+							<h3 class="h1"><b>Student Marksheet Form</b></h3>
+					</tr>
+					<tr>
+						<p><hr/></p>
+					</tr>
+					<tr>
+							<td>
+							<p><b>Enter student details:</b></p>
+							</td>
+					</tr>
+
+
+					<tr>
+						<div class="form">
+							<td>First Name:</td>
+							<td><input type="text" id="name" placeholder="Enter Firstname"></td>
+					
+					</tr>
+					
+					<tr>
+
+					
+						<td>Last Name:</td>
+						<td><input type="text" id="lname" placeholder="Enter Lastname"></td>
+					
+					</tr>
+					<tr>
+						<td>Date of Birth:</td>
+						<td>
+						<input type="date" name="Birthday" id="dob">
+						</td>
+					</tr>
+					<tr>
+
+					
+						<td>Roll Number:</td>
+						<td><input type="text" id="id" placeholder="Enter Rollnumber"></td>
+					
+					</tr>	
+					<tr>
+					<td>
+					<label for="stream">
+						Class:	
+					</td>
+					<td>
+					<select id="stream" style="size:10px;" style="height: 50px;">  
+					<option value="1">1</option>
+  					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>					
+					</select>			
+					</label>
+					</td>
+					</tr>
+
+					
+					<tr>
+
+						<td>Maths:</td>
+						<td><input type="text" id="maths" placeholder="Marks for Maths" maxlength = "2"></td>
+						
+					</tr>
+							  
+					<tr>
+
+						<td>Science:</td>
+						<td><input type="text" id="sc" placeholder="Marks for Science" maxlength = "2"></td>
+						
+					</tr>
+
+					<tr>
+
+					
+						<td>English:</td>
+						<td><input type="text" id="eng" placeholder="Marks for English" maxlength = "2"></td>
+						
+					</tr>
+					<tr>
+
+						<td>Social Studies:</td>
+						<td><input type="text" id="soc" placeholder="Marks for Social Studies" maxlength = "2"></td>
+						
+					</tr>
+					<tr>
+					<td>
+					<p><br></p>
+					</td>
+					</tr>
+				   
+					<tr>
+						<td><input type="button" id="add" value="Submit" onclick="Javascript:addRow()" class="button"></td>
+						<td><button type="reset" class= "button">Reset</button></td>
+					</tr>
+					<tr>
+						<td align ="left"><br><br><a href="home.html"/>-Back to Home Page.</td>
+					</tr>
+					</div>
+				</table>	
+				</form>
+				</div>
+			</td>
+			<td>
+
+				<div id="mydata">  
+				<div class="wrapper2">
+				<h1 class="h1">Student's Marksheet: </h1>
+
+				<table id="TableData"  border="1" cellpadding="2">
+
+					<tr>
+						<td><b>First Name </b></td>
+						<td><b>Last Name </b></td>
+						<td><b>DOB </b></td>
+						<td><b>Class</b></td>
+						<td><b>Roll Number </b></td>
+						<td><b>Maths </b></td>
+						<td><b>Science </b></td>
+						<td><b>English </b></td>
+						<td><b>Social Studies </b></td>
+						<td><b>Total Marks </b></td>
+						<td><b>Percentage <b></td>
+						<td style="background-color:#cce6ff"><b>Delete option <b></td>
+						
+
+					</tr>
+				</table>
+				</div>
+				</div>
+				
+			</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>
